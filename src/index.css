@@ -1,0 +1,93 @@
+/* ==========================================================================
+   SHREYA GHOSHAL MELODIES — Master Design Tokens & Global Styles
+   ========================================================================== */
+
+:root {
+  /* Private Listening Room Palette */
+  --bg-deep-black: #060608;
+  --bg-warm-charcoal: #0e0e12;
+  --bg-player-glass: rgba(12, 12, 16, 0.72);
+  --bg-player-hover: rgba(18, 18, 24, 0.82);
+
+  /* Warm Muted Gold & Ivory Accents */
+  --color-ivory: #F6F2EC;
+  --color-ivory-dim: rgba(246, 242, 236, 0.72);
+  --color-ivory-subtle: rgba(246, 242, 236, 0.42);
+
+  --gold-muted: #C8A962;
+  --gold-warm: #D4AF37;
+  --gold-champagne: #E6CA65;
+  --gold-burnished: #997528;
+  --gold-glow: rgba(200, 169, 98, 0.3);
+  --gold-border: rgba(200, 169, 98, 0.2);
+  --gold-border-hover: rgba(200, 169, 98, 0.45);
+
+  /* Typography Fonts */
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --shadow-floating-player: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(200, 169, 98, 0.08);
+  --shadow-gold-halo: 0 0 24px rgba(200, 169, 98, 0.4);
+
+  /* Timing */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-deep-black);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button & Interactive Resets */
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold-muted);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--gold-muted);
+  color: var(--bg-deep-black);
+}

@@ -1,0 +1,6 @@
+# Robots.txt for Shreya Ghoshal Melodies
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
